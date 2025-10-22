@@ -13,4 +13,4 @@ COPY . .
 
 # Tell Cloud Run what command to run to start the server
 # It runs "gunicorn" which serves your Flask "app" from the "main.py" file
-CMD ["gunicorn", "--bind", "0.0.0.0:8080", "main:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8080", "--timeout", "300", "main:app"]
