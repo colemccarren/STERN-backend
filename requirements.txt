@@ -1,0 +1,4 @@
+Flask
+pandas
+requests
+gunicorn  # This is a production web server Cloud Run uses
